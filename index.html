@@ -128,6 +128,7 @@
             <h1>Successfully Purchased</h1>
             <h3>First Class : <span id="firstclassticket"></span> </h3>
             <h3>Economic Class : <span id="economyclassticket"></span> </h3>
+            <h3>Total Price : <span id="showprice"></span> </h3>
         </div>
 
     </div>
@@ -164,6 +165,7 @@
 
             document.getElementById('firstclassticket').innerText = firstClassNum;
             document.getElementById('economyclassticket').innerText = economyClassNum;
+            document.getElementById('showprice').innerText= totalPrice;
         }
         function inputValue(ticket) {
             let firstClass = document.getElementById(ticket + '-ticket');
